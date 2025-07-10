@@ -1,0 +1,99 @@
+:root {
+    --VERDE-CLARO: #dde255; 
+    --VERDE-OSCURO: #0d6445;
+    --VERDE-MEDIO: #66bb6a;
+    --ROSA: #ff82a0;
+    --ROSA-CLARO: #f9b6cf;
+    --CLARO: #fff1d2;
+}
+
+/*PRODUCTOS*/
+.productos {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.tarjeta-producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 60px;
+    width: 30%; 
+    max-width: 350px; 
+    min-width: 280px; 
+    height: 650px;
+    background-color: var(--ROSA-CLARO);
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(225, 0, 124, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+.nombre-producto {
+    font-size: 24px;
+    color: var(--ROSA);
+    font-family: 'Bungee', sans-serif;
+    margin-bottom: 5px; 
+}
+
+.precio-producto {
+    font-size: 18px;
+    width: 100px;
+    background-color: var(--VERDE-OSCURO); 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: block; 
+    margin: 5px auto; 
+    text-align: center;
+}
+
+.descripcion-producto {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.boton-comprar {
+    width: 100%;
+    background-color: var(--VERDE-OSCURO); 
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-comprar:hover {
+    background-color:var(--VERDE-MEDIO);
+}

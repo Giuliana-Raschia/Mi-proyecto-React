@@ -1,0 +1,89 @@
+.contacto {
+    padding: 60px 20px;
+    text-align: center;
+}
+  
+.redes-sociales h2 {
+    font-size: 35px;
+    color: var(--VERDE-OSCURO);
+    font-family: 'Bungee', sans-serif;
+    margin-bottom: 20px;
+}
+  
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 150px;
+}
+  
+.iconos-redes img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--ROSA);
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+  
+.iconos-redes img:hover {
+    transform: scale(1.15);
+    background-color: var(--ROSA-CLARO);
+    cursor: pointer;
+}
+
+.formulario-contacto {
+    background-color: var(--VERDE-CLARO);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0 auto 60px auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.formulario-contacto h3 {
+    color: var(--VERDE-OSCURO);
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+  
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+input, textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.botones-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+  
+button {
+    background-color: var(--VERDE-OSCURO);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+button:hover {
+    background-color: var(--VERDE-MEDIO);
+}

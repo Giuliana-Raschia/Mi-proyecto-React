@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--CLARO);
+}
+
+:root {
+    --VERDE-CLARO: #dde255; 
+    --VERDE-OSCURO: #0d6445;
+    --VERDE-MEDIO: #66bb6a;
+    --ROSA: #ff82a0;
+    --ROSA-CLARO: #f9b6cf;
+    --CLARO: #fff1d2;
+}
+
+.titulos {
+    font-family: 'Bungee', sans-serif;
+}
+
+.texto {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: var(--VERDE-OSCURO);
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, nav a la derecha */
+    align-items: center; 
+    padding: 10px 30px;
+    height: 150px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.logo img {
+    height: 100px; 
+}
+
+.nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%; 
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.nav a:hover {
+    background-color: var(--VERDE-CLARO);
+}
+
+.nav a.active {
+    background-color:var(--VERDE-CLARO); 
+    color: var(--VERDE-OSCURO);
+}
