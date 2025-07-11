@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Options from './components/Options';
-import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import Products from './components/Products';
 import News from './components/News';
@@ -23,7 +22,6 @@ function App() {
               <Home />
               <About />
               <Options />
-              <Gallery />
             </>
           }
         />

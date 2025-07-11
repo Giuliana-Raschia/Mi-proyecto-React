@@ -1,4 +1,5 @@
 import '../styles/Products.css';
+import ProductCard from "./ProductCard";
 
 function Products() {
   const productos = [
@@ -78,17 +79,17 @@ function Products() {
     
   ];
 
-  return (
+ return (
     <section className="productos">
       <div className="container-productos">
         {productos.map((producto, index) => (
-          <div key={index} className="tarjeta-producto">
-            <img src={producto.imagen} alt={producto.nombre} />
-            <h2 className="nombre-producto">{producto.nombre}</h2>
-            <h3 className="precio-producto">{producto.precio}</h3>
-            <p className="descripcion-producto">{producto.descripcion}</p>
-            <button className="boton-comprar">Comprar</button>
-          </div>
+          <ProductCard
+            key={index}
+            imagen={producto.imagen}
+            nombre={producto.nombre}
+            precio={producto.precio}
+            descripcion={producto.descripcion}
+          />
         ))}
       </div>
     </section>
